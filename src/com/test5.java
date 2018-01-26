@@ -18,7 +18,7 @@ public class test5 {
         
         Thread t2 = new Thread(()->{
             for(int i = 0; i < 1000; i++) {
-                System.out.println("高优先级");
+                System.out.println("高优先级1111111111111");
             }
         });
         
