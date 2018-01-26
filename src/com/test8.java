@@ -37,7 +37,7 @@ class demo1 {
     
     public static void print2() {
         synchronized (demo1.class) {
-            System.out.print("很");
+            System.out.print("很11");
             System.out.print("开");
             System.out.print("心");
             System.out.println();
