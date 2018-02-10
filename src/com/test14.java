@@ -69,6 +69,7 @@ class singleton3{
     }
 }
 
+//类似于饿汉式
 class Singleton4 {
     private Singleton4() {}
     public static final Singleton4 s = new Singleton4();//final是最终的意思,被final修饰的变量不可以被更改
