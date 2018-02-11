@@ -1,4 +1,4 @@
-package com;
+package com.thread;
 
 /**
  * @author Arike
@@ -8,7 +8,7 @@ package com;
 /**
  * 用implements Runnable的方式模拟火车票4个窗口售卖.
  */
-public class test12 {
+public class test9 {
     public static void main(String[] args) {
         ticket ticket =new ticket();
         new Thread(ticket).start();
@@ -18,7 +18,7 @@ public class test12 {
     }
 }
 
-class ticket1 implements Runnable{
+class ticket implements Runnable{
     public static int tickets = 100;
     @Override
     public void run() {
@@ -36,7 +36,7 @@ class ticket1 implements Runnable{
                 }
                 System.out.println(Thread.currentThread().getName()+"   "+"还剩余"+tickets--+"张票");
             }
-            
+           
         }
     }
 }
